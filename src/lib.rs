@@ -1,7 +1,7 @@
 //implementing the rc type
-
-use std::cell::Cell;
 pub mod Rc {
+    
+use std::cell::Cell;
 struct RcInner<T> {
     value: T,
     count: Cell<usize>,
